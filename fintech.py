@@ -14,9 +14,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report
 import joblib
 
-# Set random seed for reproducibility
-np.random.seed(42)
-
 # Generate random data
 n_samples = 1000
 time_on_books = np.random.randint(1, 61, n_samples)  # months on books
