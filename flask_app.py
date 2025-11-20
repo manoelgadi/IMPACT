@@ -1,11 +1,11 @@
-from flask import Flask
+from flask import Flask,render_template, request
 import pandas as pd
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return """Hello from flask!"""
+    return render_template("index.html")
 
 from joblib import load
 model = load('fintech.joblib')
